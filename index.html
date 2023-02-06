@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="muhiim"> <h1 id="title">Software engineer survey form</h1>
+    <p class="p" id="description" >Let us know your expeience and how you got in to this field</p></div> 
+    <form method="get" id="survey-form">
+        <fieldset class="one">
+            <label id="name-label" for="name">your name<input placeholder="Enter your name" type="text"required id="name" name=" name"></label><br>
+            <label id="email-label" for="email">your email<input required placeholder="Enter your email" id="email" name=" email " type="email"></label><br>
+            <label id="number-label" for="number">your age<input  placeholder="Enter your age" type="number" name="age" id="number" min="14" max="64" ></label><br>
+            <label for="role">Which option best describes your current role?<br><select id="dropdown" name="role" id="role"><option>select..</option><option>front-end</option>
+                <option>back-end</option> <option>full stack</option> <option>software</option></select></label><br>
+        </fieldset>
+        <fieldset class="two">
+            How you become a software developer
+            <label for="university"></label><input class="inline" id="university" value="University"  name="education" type="radio">University</label><br> 
+             <label for="education"></label><input class="inline" id="education" value="Bootcamp" name="education" type="radio">Bootcamp       </label><br> 
+             <label for="free "></label><input class="inline" id="free" name="education" value="free resources" type="radio">Free resources </label><br>
+          <p>Which one you was:</p>
+            <label for="programmer"><input class="inline" id="programmer" value="self taught" name="programmer" type="radio">Self taught learner</label>
+            <label for="trained"><input class="inline" id="trained"  value="A formally trained " name="programmer" type="radio">A formally trained programmer </label><br>
+            <p>What would you like to see improved?</p>
+            <label for="end"><input class="inline" id="end" value="Back-end Projects" type="checkbox">Back-end Projects</label><br>
+            <label for="data"><input class="inline" id="data"  value="Data Visualization" type="checkbox">Data Visualization</label><br>
+            <label for="chalenge"><input class="inline" id="chalenges"value="chalenge"  type="checkbox"> Challenges</label><br>
+            <label for="open"><input class="inline" id="open" value="Open Source Community" type="checkbox">Open Source Community</label><br>
+            <label for="front"><input class="inline" id="front"value="front-end projects"  type="checkbox">front-end projects</label>
+        </fieldset>
+        <fieldset class="three">
+            Share with us your experience and advice about this industry
+            <label for="comment"><textarea placeholder="my advice is..." id="comment" name="comment" rows="5" cols="50" ></textarea></label><br>
+            
+        </fieldset>
+        <label for="submit"><input type="submit" id="submit" value="submit"> </label>
+    </form>
+</body>
+</html>
